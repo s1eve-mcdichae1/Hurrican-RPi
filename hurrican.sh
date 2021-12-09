@@ -10,9 +10,9 @@
 #
 
 rp_module_id="hurrican"
-rp_module_desc="Hurrican - A freeware jump and shoot game made by Poke53280 (Eiswuxe)"
-rp_module_help="After installation, select game from the Ports menu.\n\nSelect gamepad controls in game options menu.\n\nA keyboard is required to pause/exit game."
-rp_module_repo="git https://github.com/drfiemost/Hurrican.git master f2cce99"
+rp_module_desc="Hurrican - Turrican clone - A freeware jump and shoot game made by Poke53280 (Eiswuxe)"
+rp_module_help="After installation, select game from the Ports system.\n\nSelect gamepad controls in game preferences menu.\n\nGamepad pause/menu button is hardcoded. Edit $md_build/Hurrican/src/DX8Joystick.cpp line 172, or use keyboard ESC key."
+rp_module_repo="git https://github.com/drfiemost/Hurrican.git joystick_pause 251e559"
 rp_module_licence="MIT https://raw.githubusercontent.com/drfiemost/Hurrican/master/LICENSE"
 rp_module_section="exp"
 rp_module_flags="!all rpi4"
@@ -45,8 +45,7 @@ function install_hurrican() {
 }
 
 function configure_hurrican() {
-    addPort "$md_id" "hurrican" "Hurrican - Turrican clone" "pushd $md_conf_root/hurrican; $md_inst/hurrican --pathdata $md_inst; popd"
+    addPort "$md_id" "hurrican" "Hurrican - Turrican clone" "pushd $md_conf_root/hurrican; $md_inst/hurrican --pathdata $md_inst --pathsave $md_conf_root/hurrican; popd"
     mkRomDir "ports"
     moveConfigDir "$home/.config/hurrican" "$md_conf_root/hurrican"
-    moveConfigDir "$home/.local/share/hurrican" "$md_conf_root/hurrican"
 }
