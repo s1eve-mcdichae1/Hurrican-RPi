@@ -1,11 +1,19 @@
 # Hurrican-RPi
 Hurrican - Turrican clone
 
-A freeware jump and shoot game made by Poke53280 (Eiswuxe) and based on the Turrican series of run and gun platformers.
+A freeware jump and shoot game made by Poke53280 (Eiswuxe) and based on the Turrican series of run and gun platformers: https://www.winterworks.de/project/hurrican/
+
+SDL2 port by drfiemost: https://github.com/drfiemost/Hurrican
 
 Pi 4 only.
 
+Some updates to the repo bring gamepad-related bug fixes and preliminary gamepad menu support.
+
 Issues:
-- No "pause" or "menu" button on the gamepad. Once you begin a game, you *cannot exit* without a keyboard to press [Esc].
-- With gamepad control enabled, game text reads, for example "`press Joypad leftJoypad rightJoypad upJoypad down to crouch`" instead of just "`press Joypad down to crouch`." Issue not present with keyboard control.
-- Tutorial level crashes with a segfault, in the same place every time (just after the destructible wall where it shows you the smartbomb.) If you skip the tutorial then the main game *seems* to work okay but I haven't got very far in at all so something may still happen once you get farther in than the first half of the first level.
+- Gamepad "pause/menu" button is hardcoded. Edit file `Hurrican/src/DX8Joystick.cpp` line 172, or use keyboard ESC key.
+
+Fixed:
+- No "pause" or "menu" button on the gamepad. Once you begin a game, you *cannot exit* without a keyboard to press [Esc]. (Workaround with hard-coded menu button.)
+- With gamepad control enabled, game text reads, for example "`crouch by pressing 'Joypad leftJoypad rightJoypad downJoypad upJoypad down'`" instead of just "`crouch by pressing 'Joypad down'`." Issue not present with keyboard control. (Fixed with `append` >> `assign`.)
+- Tutorial level crashes with a segfault, in the same place every time (just after the destructible wall where it shows you the smartbomb.) (Magically vanished when above was fixed.)
+- `--pathsave` param not working. (Fixed with `create_directory` >> `is_directory`.)
