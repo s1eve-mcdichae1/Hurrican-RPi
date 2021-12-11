@@ -30,7 +30,7 @@ function build_hurrican() {
     mkdir build && cd build
     cmake -DCMAKE_BUILD_TYPE=Release ..
     make
-    md_ret_require="$md_build"
+    md_ret_require="$md_build/Hurrican/build/hurrican"
 }
 
 function install_hurrican() {
