@@ -1,11 +1,11 @@
 # Hurrican-RPi
 Hurrican - Turrican clone
 
+Installation scriptmodule for use with RetroPie. Currently RPi4 only.
+
 A freeware jump and shoot game made by Poke53280 (Eiswuxe) and based on the Turrican series of run and gun platformers: https://www.winterworks.de/project/hurrican/
 
-SDL2 port by drfiemost: https://github.com/drfiemost/Hurrican
-
-Pi 4 only.
+SDL2 port by drfiemost (branch `joystick_pause`): https://github.com/drfiemost/Hurrican/tree/joystick_pause
 
 Some updates to the repo bring gamepad-related bug fixes and preliminary gamepad menu support.
 

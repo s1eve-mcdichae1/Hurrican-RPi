@@ -11,8 +11,8 @@
 
 rp_module_id="hurrican"
 rp_module_desc="Hurrican - Turrican clone - A freeware jump and shoot game made by Poke53280 (Eiswuxe)"
-rp_module_help="After installation, select game from the Ports system.\n\nSelect gamepad controls in game preferences menu.\n\nGamepad pause/menu button is hardcoded. Edit $md_build/Hurrican/src/DX8Joystick.cpp line 172, or use keyboard ESC key."
-rp_module_repo="git https://github.com/drfiemost/Hurrican.git joystick_pause 3d67def"
+rp_module_help="After installation, select game from the Ports system.\n\nSelect gamepad controls in game preferences menu.\n\nGamepad pause/menu button is hardcoded. Edit file $md_build/Hurrican/src/DX8Joystick.cpp line 172, or use keyboard ESC key."
+rp_module_repo="git https://github.com/drfiemost/Hurrican.git joystick_pause 251e559"
 rp_module_licence="MIT https://raw.githubusercontent.com/drfiemost/Hurrican/master/LICENSE"
 rp_module_section="exp"
 rp_module_flags="!all rpi4"
@@ -30,7 +30,7 @@ function build_hurrican() {
     mkdir build && cd build
     cmake -DCMAKE_BUILD_TYPE=Release ..
     make
-    md_ret_require="$md_build"
+    md_ret_require="$md_build/Hurrican/build/hurrican"
 }
 
 function install_hurrican() {
