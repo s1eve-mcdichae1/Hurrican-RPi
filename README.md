@@ -16,7 +16,8 @@ Download the scriptmodule with command:
 After that you can install the port through **RetroPie-Setup > Manage packages > Manage experimental packages**
 
 # What's new
-Some updates to the repo bring gamepad-related bug fixes and preliminary gamepad menu support (branch `joystick_pause`).
+- Branch `joystick_pause` promoted to `master`.
+- Some updates to the repo bring gamepad-related bug fixes and gamepad pause/menu support.
 
 Fixed:
 - Gamepad "pause/menu" button is hardcoded. Edit file `Hurrican/src/DX8Joystick.cpp` line 172, or use keyboard ESC key. (Fixed: autodetects start button mapping with SDL_GameController API)
