@@ -18,7 +18,7 @@ rp_module_section="exp"
 rp_module_flags="!all rpi4"
 
 function depends_hurrican() {
-    getDepends libsdl2-image-dev libsdl2-mixer-dev libepoxy-dev cmake
+    getDepends libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libepoxy-dev cmake
 }
 
 function sources_hurrican() {
