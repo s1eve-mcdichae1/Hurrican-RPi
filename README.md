@@ -1,13 +1,16 @@
-# Hurrican-RPi
-Hurrican - Turrican clone
-
+## Hurrican-RPi
 Installation scriptmodule for use with RetroPie. Currently RPi4 only.
+https://retropie.org.uk
 
-A freeware jump and shoot game made by Poke53280 (Eiswuxe) and based on the Turrican series of run and gun platformers: https://www.winterworks.de/project/hurrican/
+#### Hurrican - Turrican clone
 
-SDL2 port by drfiemost: https://github.com/drfiemost/Hurrican
+A freeware jump and shoot game made by Poke53280 (Eiswuxe) and based on the Turrican series of run and gun platformers:
+https://www.winterworks.de/project/hurrican/
 
-# Installation
+This module installs the SDL2 port by drfiemost, hosted at:
+https://github.com/drfiemost/Hurrican
+
+## Installation
 
 Download the scriptmodule with command:
 
@@ -15,7 +18,7 @@ Download the scriptmodule with command:
 
 After that you can install the port through **RetroPie-Setup > Manage packages > Manage experimental packages**
 
-# What's new
+## What's new
 - Branch `joystick_pause` promoted to `master`.
 - Some updates to the repo bring gamepad-related bug fixes and gamepad pause/menu support.
 
