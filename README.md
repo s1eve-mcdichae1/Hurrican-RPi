@@ -7,6 +7,15 @@ A freeware jump and shoot game made by Poke53280 (Eiswuxe) and based on the Turr
 
 SDL2 port by drfiemost: https://github.com/drfiemost/Hurrican
 
+# Installation
+
+Download the scriptmodule with command:
+
+    wget https://github.com/s1eve-mcdichae1/Hurrican-RPi/raw/main/hurrican.sh -P $HOME/RetroPie-Setup/scriptmodules/ports/
+
+After that you can install the port through **RetroPie-Setup > Manage packages > Manage experimental packages**
+
+# What's new
 Some updates to the repo bring gamepad-related bug fixes and preliminary gamepad menu support (branch `joystick_pause`).
 
 Fixed:
