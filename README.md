@@ -18,6 +18,7 @@ Download the scriptmodule with command:
 After that you can install the port through **RetroPie-Setup > Manage packages > Manage experimental packages**
 
 ## What's new
+- Force feedback enabled.
 - Branch `joystick_pause` promoted to `master`.
 - Some updates to the repo bring gamepad-related bug fixes and gamepad pause/menu support.
 
