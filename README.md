@@ -14,8 +14,7 @@ https://github.com/drfiemost/Hurrican
 
 Download the scriptmodule with command:
 
-    wget https://github.com/s1eve-mcdichae1/Hurrican-RPi/raw/main/hurrican.sh -P $HOME/RetroPie-Setup/scriptmodules/ports/
-
+    wget https://raw.githubusercontent.com/s1eve-mcdichae1/Hurrican-RPi/main/hurrican.sh -P $HOME/RetroPie-Setup/scriptmodules/ports/
 After that you can install the port through **RetroPie-Setup > Manage packages > Manage experimental packages**
 
 ## What's new
