@@ -12,7 +12,7 @@
 rp_module_id="hurrican"
 rp_module_desc="Hurrican - Turrican clone - A freeware jump and shoot game made by Poke53280 (Eiswuxe)"
 rp_module_help="After installation, select game from the Ports system.\n\nSelect gamepad controls in game preferences menu."
-rp_module_repo="git https://github.com/drfiemost/Hurrican.git master 59eb95d"
+rp_module_repo="git https://github.com/drfiemost/Hurrican.git master b8b3d31"
 rp_module_licence="MIT https://raw.githubusercontent.com/drfiemost/Hurrican/master/LICENSE"
 rp_module_section="exp"
 rp_module_flags="!all rpi4"
