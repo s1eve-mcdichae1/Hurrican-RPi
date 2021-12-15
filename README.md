@@ -1,13 +1,15 @@
 ## Hurrican-RPi
-Installation scriptmodule for use with RetroPie. Currently RPi4 only.
+Installation scriptmodule for use with RetroPie:\
 https://retropie.org.uk
+
+Currently RPi4 only.
 
 #### Hurrican - Turrican clone
 
-A freeware jump and shoot game made by Poke53280 (Eiswuxe) and based on the Turrican series of run and gun platformers:
+A freeware jump and shoot game made by Poke53280 (Eiswuxe) and based on the Turrican series of run and gun platformers:\
 https://www.winterworks.de/project/hurrican/
 
-This module installs the SDL2 port by drfiemost, hosted at:
+This module installs the SDL2 port by drfiemost, hosted at:\
 https://github.com/drfiemost/Hurrican
 
 ## Installation
