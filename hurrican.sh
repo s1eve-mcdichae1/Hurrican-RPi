@@ -45,7 +45,9 @@ function install_hurrican() {
 }
 
 function configure_hurrican() {
-    addPort "$md_id" "hurrican" "Hurrican - Turrican clone" "pushd $md_conf_root/hurrican; $md_inst/hurrican --pathdata $md_inst --pathsave $md_conf_root/hurrican; popd"
-    mkRomDir "ports"
-    moveConfigDir "$home/.config/hurrican" "$md_conf_root/hurrican"
+    if [[ "$md_mode" == "install" ]]; then
+        addPort "$md_id" "hurrican" "Hurrican - Turrican clone" "pushd $md_conf_root/hurrican; $md_inst/hurrican --pathdata $md_inst --pathsave $md_conf_root/hurrican; popd"
+        mkRomDir "ports"
+        moveConfigDir "$home/.config/hurrican" "$md_conf_root/hurrican"
+    fi
 }
