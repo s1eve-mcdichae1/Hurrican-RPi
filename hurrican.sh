@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Adapted from ZeroJay's RetroPie-Extra
+# https://github.com/zerojay/RetroPie-Extra
+
 # This file is part of The RetroPie Project
 #
 # The RetroPie Project is the legal property of its developers, whose names are
