@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Adapted from ZeroJay's RetroPie-Extra
+# https://github.com/zerojay/RetroPie-Extra
+
 # This file is part of The RetroPie Project
 #
 # The RetroPie Project is the legal property of its developers, whose names are
@@ -12,10 +15,10 @@
 rp_module_id="hurrican"
 rp_module_desc="Hurrican - Turrican clone - A freeware jump and shoot game made by Poke53280 (Eiswuxe)"
 rp_module_help="After installation, select game from the Ports system.\n\nSelect gamepad controls in game preferences menu."
-rp_module_repo="git https://github.com/drfiemost/Hurrican.git master b8b3d31"
 rp_module_licence="MIT https://raw.githubusercontent.com/drfiemost/Hurrican/master/LICENSE"
+rp_module_repo="git https://github.com/drfiemost/Hurrican.git master b8b3d31"
 rp_module_section="exp"
-rp_module_flags="!all rpi4"
+rp_module_flags=""
 
 function depends_hurrican() {
     getDepends libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libepoxy-dev cmake
@@ -46,6 +49,5 @@ function install_hurrican() {
 
 function configure_hurrican() {
     addPort "$md_id" "hurrican" "Hurrican - Turrican clone" "pushd $md_conf_root/hurrican; $md_inst/hurrican --pathdata $md_inst --pathsave $md_conf_root/hurrican; popd"
-    mkRomDir "ports"
     moveConfigDir "$home/.config/hurrican" "$md_conf_root/hurrican"
 }
